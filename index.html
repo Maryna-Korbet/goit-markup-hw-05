@@ -66,7 +66,9 @@
       <section>
         <div class="container-hiro">
           <h1 class="headlines-hero">Эффективные решения <br />для вашего бизнеса</h1>
-          <button class="button-hero text-button-hero" type="button">Заказать услугу</button>
+          <button class="button-hero text-button-hero" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!--СЕКЦИЯ КАЧЕСТВА. Скрытый заголовок-->
@@ -76,7 +78,7 @@
           <ul class="studio-quality-item">
             <li class="studio-quality-item-element">
               <div class="icon-quality">
-                <svg width="66" height="70">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-group"></use>
                 </svg>
               </div>
@@ -87,7 +89,7 @@
             </li>
             <li class="studio-quality-item-element">
               <div class="icon-quality">
-                <svg width="66" height="70">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -98,7 +100,7 @@
             </li>
             <li class="studio-quality-item-element">
               <div class="icon-quality">
-                <svg width="70" height="54">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -109,7 +111,7 @@
             </li>
             <li class="studio-quality-item-element">
               <div class="icon-quality">
-                <svg width="54" height="60">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -438,5 +440,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon" width="11" height="11">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
